@@ -1,0 +1,52 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    max-width: 320px;
+    margin: 0 auto;
+    background-color: #6495ed;
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    justify-content: space-between;
+}
+
+h1 {
+    display: inline;
+}
+
+.your {
+    margin-left: 20px;
+}
+
+
+.app {
+    font-weight: 300;
+    margin-right: auto;
+}
+
+.bell {
+    margin-top: 10px;
+    margin-right: 20px;
+    padding-right: 10px;
+    border-right: 1px solid black;
+}
+
+.picture-radius {
+    border-radius: 50%;
+    height: 50px;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+.owner {
+    display: none;
+    font-weight: 300;
+    margin-right: 20px;
+}
+
+.first-chart {
+    max-width: 320px;
+    margin: 0 auto;
+}
