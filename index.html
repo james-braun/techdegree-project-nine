@@ -6,19 +6,26 @@
     <title>dashboard</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+    
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.2/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.0.0-beta2/Chart.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900" rel="stylesheet">
   </head>
   <body>
       <header>
         <h2 class="your">Your</h2>
         <h2 class="app">App&#8482</h2>
-        <img class="bell" src="icons/icon-bell.svg" width="50px" height="50px" alt="notification bell">
+        <img class="bell" src="icons/icon-bell.svg" width="35px" height="35px" alt="notification bell">
+        <div class="dot"></div>
+        <div class="divider"></div>
         <img class="picture-radius" src="icons/me.jpg">
         <h2 class="owner"> James Braun</h2>
       </header>
-      <section class="first-chart">
-        <canvas id="myChart" width="400" height="400"></canvas>        
+      <section class="charts">
+        <canvas id="c" width="400" height="300"></canvas>
+        <canvas id="myChart" width="400" height="100"></canvas>
+        <canvas id="weeklyTrafficChart" width="320" height="320"></canvas>       
       </section>
       <script src="js/app.js"></script>
   </body>

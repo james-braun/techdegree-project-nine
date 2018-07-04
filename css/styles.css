@@ -3,7 +3,7 @@ body {
 }
 
 header {
-    max-width: 320px;
+    max-width: 1400px;
     margin: 0 auto;
     background-color: #6495ed;
     display: flex;
@@ -27,17 +27,33 @@ h1 {
 }
 
 .bell {
-    margin-top: 10px;
-    margin-right: 20px;
-    padding-right: 10px;
-    border-right: 1px solid black;
+    margin-top: 20px;
+    /* margin-right: 20px; */
+    /* padding-right: 10px; */
+    /* border-right: 1px solid black; */
+}
+
+.dot {
+    background-color: #0f0;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    margin-top: 18px;
+    margin-left: -10px;
+}
+  
+.divider {
+    background-color: black;
+    width: 1px;
+    height: 45px;
+    margin-left: 20px;
+    margin-top: 15px
 }
 
 .picture-radius {
     border-radius: 50%;
     height: 50px;
-    margin-top: 10px;
-    margin-right: 20px;
+    margin: 10px 20px
 }
 
 .owner {
@@ -46,7 +62,8 @@ h1 {
     margin-right: 20px;
 }
 
-.first-chart {
-    max-width: 320px;
+.charts {
+    max-width: 1400px;
+    max-height: 400px;
     margin: 0 auto;
 }
