@@ -22,11 +22,24 @@
         <img class="picture-radius" src="icons/me.jpg">
         <h2 class="owner"> James Braun</h2>
       </header>
-      <section class="charts">
-        <canvas id="c" width="400" height="300"></canvas>
-        <canvas id="myChart" width="400" height="100"></canvas>
-        <canvas id="weeklyTrafficChart" width="320" height="320"></canvas>       
+      <nav class="container">
+        <img class="item first" src="icons/icon-dashboard.svg" width="35px" height="35px" alt="dashboard">
+        <img class="item" src="icons/icon-members.svg" width="35px" height="35px" alt="members">
+        <img class="item" src="icons/icon-visits.svg" width="35px" height="35px" alt="visits">
+        <img class="item" src="icons/icon-settings.svg" width="35px" height="35px" alt="settings">
+      </nav>
+      <section>
+        <h2 class="dash">Dashboard</h2>
+        <div class="input">
+          <input type="search" placeholder="search">
+        </div>
       </section>
+      <section>
+        <h3>TRAFFIC</h3>
+        <canvas id="trafficChart" width="320" height="320"></canvas>
+        <h3>DAILY TRAFFIC</h3>
+        <canvas id="weeklyTrafficChart" width="320" height="320"></canvas>       
+      </section>  
       <script src="js/app.js"></script>
   </body>
   </html>

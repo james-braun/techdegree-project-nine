@@ -1,10 +1,11 @@
 body {
     font-family: 'Roboto', sans-serif;
+    max-width: 320px;
+    margin: 0 auto;
+    /* background-color: lightgrey; */
 }
 
 header {
-    max-width: 1400px;
-    margin: 0 auto;
     background-color: #6495ed;
     display: flex;
     flex-wrap: wrap;
@@ -62,8 +63,43 @@ h1 {
     margin-right: 20px;
 }
 
-.charts {
-    max-width: 1400px;
+.container {
+    display: flex;
+    justify-content: space-around;
+    height: 50px;
+    background-color: darkslateblue;
+    border-left: #0f0 solid;
+}
+
+.item {
+    margin-top: 7.5px;
+}
+
+.dash {
+    display: Inline;
+    margin-right: 7.5px;
+    margin-left: 5px;
+}
+
+.input {
+    display: inline;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    margin-right: 10px;
+    margin-top: -5px;
+    border-left: 1px lightslategrey solid;
+    border-bottom: 1px lightslategrey solid;
+    background-color: rgb(233, 231, 231);
+}
+
+#trafficChart {
+    max-width: 400px;
     max-height: 400px;
     margin: 0 auto;
+}
+
+#weeklyTrafficChart {
+    max-width: 320px;
+    max-height: 320px;
 }
