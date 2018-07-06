@@ -17,7 +17,7 @@
         <h2 class="your">Your</h2>
         <h2 class="app">App&#8482</h2>
         <img class="bell" src="icons/icon-bell.svg" width="35px" height="35px" alt="notification bell">
-        <div class="dot"></div>
+        <div id="dot"></div>
         <div class="divider"></div>
         <img class="picture-radius" src="icons/me.jpg">
         <h2 class="owner"> James Braun</h2>
@@ -33,9 +33,14 @@
         <div class="input">
           <input type="search" placeholder="search">
         </div>
+        <p class="alert" data-tip="alert -  Nulam quis risus eget molis srnate" tabindex="1"></p>
       </section>
       <section>
-        <h3 class="traffic">TRAFFIC</h3><span>H</span><span>D</span><span>W</span><span>M</span>
+        <h3 class="traffic">TRAFFIC</h3>
+        <span>H</span>
+        <span>D</span>
+        <span>W</span>
+        <span>M</span>
         <canvas id="trafficChart" width="320" height="320"></canvas>
         <h3>DAILY TRAFFIC</h3>
         <canvas id="weeklyTrafficChart" width="320" height="320"></canvas>       
