@@ -4,6 +4,9 @@ let label2 = ["S","M","T","W","T","F","S"];
 let chartData2 = [75,100,175,125,225,200,100];
 let trafficChart = document.getElementById("trafficChart").getContext('2d');
 let weeklyTrafficChart = document.getElementById("weeklyTrafficChart").getContext('2d');
+let span = document.querySelectorAll("span");
+
+
 
 
 let mainTrafficChart = new Chart(trafficChart, {

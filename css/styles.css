@@ -54,7 +54,7 @@ h1 {
 .picture-radius {
     border-radius: 50%;
     height: 50px;
-    margin: 10px 20px
+    margin: 10px 20px;
 }
 
 .owner {
@@ -87,12 +87,17 @@ h1 {
     padding-bottom: 5px;
     padding-top: 5px;
     margin-right: 10px;
-    margin-top: -5px;
     border-left: 1px lightslategrey solid;
     border-bottom: 1px lightslategrey solid;
     background-color: rgb(233, 231, 231);
 }
-
+.traffic {
+    display: inline;
+    margin-right: 125px;
+}
+span {
+    margin-right: 20px;
+}
 #trafficChart {
     max-width: 400px;
     max-height: 400px;
