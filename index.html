@@ -9,7 +9,7 @@
     
     <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.2/moment.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.0.0-beta2/Chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900" rel="stylesheet">
   </head>
   <body>
@@ -23,10 +23,11 @@
         <h2 class="owner"> James Braun</h2>
       </header>
       <nav class="container">
-        <img class="item first" src="icons/icon-dashboard.svg" width="35px" height="35px" alt="dashboard">
-        <img class="item" src="icons/icon-members.svg" width="35px" height="35px" alt="members">
-        <img class="item" src="icons/icon-visits.svg" width="35px" height="35px" alt="visits">
-        <img class="item" src="icons/icon-settings.svg" width="35px" height="35px" alt="settings">
+        <div class="selected"></div>
+        <img class="item first" src="icons/icon-dashboard.svg" width="25px" height="25px" alt="dashboard">
+        <img class="item" src="icons/icon-members.svg" width="25px" height="25px" alt="members">
+        <img class="item" src="icons/icon-visits.svg" width="25px" height="25px" alt="visits">
+        <img class="item" src="icons/icon-settings.svg" width="25px" height="25px" alt="settings">
       </nav>
       <section>
         <h2 class="dash">Dashboard</h2>
@@ -43,7 +44,9 @@
         <span>M</span>
         <canvas id="trafficChart" width="320" height="320"></canvas>
         <h3>DAILY TRAFFIC</h3>
-        <canvas id="weeklyTrafficChart" width="320" height="320"></canvas>       
+        <canvas id="weeklyTrafficChart" width="320" height="320"></canvas> 
+        <h3>MOBILE USERS</h3>
+        <canvas id="mobileUsersChart" width="100" height="100"></canvas>
       </section>  
       <script src="js/app.js"></script>
   </body>

@@ -1,9 +1,10 @@
 
 
-let label = [["t","w","t","f","s","s","m"],["S","M","T","W","T","F","S"],["16-22","23-29","30-5","6-12","13-19","20-26","27-3","4-10","11-17","18-24","25-31"],["f","s","s","m","t","w","t"]];
-let chartData = [[75,100,175,125,225,200,100], [75,100,175,125,225,200,100], [700,1300,1000,1500,2000,1500,1700,1300,1100,1500,2000], [75,100,175,125,225,200,100]];
+let label = [["12","1","2","3","4","5","6","7","8","9","10","11"],["S","M","T","W","T","F","S"],["16-22","23-29","30-5","6-12","13-19","20-26","27-3","4-10","11-17","18-24","25-31"],['JAN','FEB','MAR','APR','MAY','JUN','JUL','AUG','SEP','OCT','NOV','DEC']];
+let chartData = [[75,100,175,125,225,200,100,175,125,225,200,100], [75,100,175,125,225,200,100], [700,1300,1000,1500,2000,1500,1700,1300,1100,1500,2000], [2800,3900,4000,4500,6500,4200,6100,8000,3300,6000,7500,5600]];
 let trafficChart = document.getElementById("trafficChart").getContext('2d');
 let weeklyTrafficChart = document.getElementById("weeklyTrafficChart").getContext('2d');
+let mobileUsersChart = document.getElementById("mobileUsersChart").getContext('2d');
 let spanElement = document.querySelectorAll("span");
 let dot = document.getElementById("dot");
 let pElement = document.querySelector("p");
@@ -117,4 +118,23 @@ let weeklyChart = new Chart(weeklyTrafficChart, {
             }],
         }
     }
+});
+let mobileChart = new Chart(mobileUsersChart, {
+    type: 'doughnut',
+    data: {
+        labels: ["Phones","Tablets","Desktops"],
+        datasets: [{
+            data: [100, 250, 50],
+            backgroundColor: ['rgba(100,253,149,1)', 'rgba(100,149,253,1)', 'rgba(253,100,149,1)']
+        }]
+    },
+    options: {
+        legend: {
+            labels: {
+                boxWidth: 10   
+            },
+            position: 'right',
+        },
+    }
+
 });

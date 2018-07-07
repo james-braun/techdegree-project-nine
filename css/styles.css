@@ -2,7 +2,6 @@ body {
     font-family: 'Roboto', sans-serif;
     max-width: 320px;
     margin: 0 auto;
-    /* background-color: lightgrey; */
 }
 
 header {
@@ -29,9 +28,6 @@ h1 {
 
 .bell {
     margin-top: 20px;
-    /* margin-right: 20px; */
-    /* padding-right: 10px; */
-    /* border-right: 1px solid black; */
 }
 
 #dot {
@@ -64,15 +60,22 @@ h1 {
 }
 
 .container {
-    display: flex;
-    justify-content: space-around;
+    display: inline-block;
+    width: 320px;
     height: 50px;
     background-color: darkslateblue;
-    border-left: #0f0 solid;
 }
 
 .item {
-    margin-top: 7.5px;
+    display: inline-block;
+    margin-top: 12.5px;
+    margin-left: 15px;
+}
+
+.selected {
+    display: inline;
+    padding-top: 17px;
+    border: 1px #0f0 solid;
 }
 
 .dash {
@@ -92,26 +95,18 @@ h1 {
 }
 
 p {
-    margin-top: 50px;
+    margin-top: 25px;
 }
-
-/* .alert {
-    position: relative;    
-}  */
-
 
 .alert::before {
     position: relative;
     left: 50%;
-    opacity: 1;
-    z-index: 100;
 }
 
 .alert::before {
     color: white;
     background: #6495ed;
     border-radius: 4px;
-    bottom: 100%;
     padding: 8px;
     margin-left: -130px;
     content: attr(data-tip);
