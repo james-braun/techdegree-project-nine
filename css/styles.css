@@ -76,19 +76,18 @@ h1 {
 }
 
 .dash {
-    display: Inline;
-    margin-right: 7.5px;
+    display: Inline-block;
+    margin-top: 0;
+    margin-right: 6px;
     margin-left: 5px;
 }
 
 .input {
-    display: inline;
+    display: inline-block;
     padding-left: 10px;
     padding-bottom: 10px;
     padding-top: 5px;
-    margin-right: 10px;
-    border-left: 1px lightslategrey solid;
-    border-bottom: 1px lightslategrey solid;
+    padding-right: 2px;
     background-color: rgb(233, 231, 231);
 }
 
@@ -96,10 +95,9 @@ p {
     margin-top: 50px;
 }
 
-.alert {
-/* display: inline-block; */
+/* .alert {
     position: relative;    
-} 
+}  */
 
 
 .alert::before {
@@ -110,12 +108,12 @@ p {
 }
 
 .alert::before {
-    
+    color: white;
     background: #6495ed;
     border-radius: 4px;
-    bottom: 180%;
+    bottom: 100%;
     padding: 8px;
-    margin-left: -140px;
+    margin-left: -130px;
     content: attr(data-tip);
 }
 
