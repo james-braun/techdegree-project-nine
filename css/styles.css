@@ -1,5 +1,6 @@
 body {
     font-family: 'Roboto', sans-serif;
+    /* color: rgb(161, 161, 161); */
     max-width: 320px;
     margin: 0 auto;
 }
@@ -79,7 +80,7 @@ h1 {
 }
 
 .dash {
-    display: Inline-block;
+    display: Inline;
     margin-top: 0;
     margin-right: 6px;
     margin-left: 5px;
@@ -87,11 +88,11 @@ h1 {
 
 .input {
     display: inline-block;
-    padding-left: 10px;
+    padding-left: 7.5px;
     padding-bottom: 10px;
     padding-top: 5px;
-    padding-right: 2px;
-    background-color: rgb(233, 231, 231);
+    padding-right: 0;
+    background-color: rgb(231, 231, 231);
 }
 
 p {
@@ -140,5 +141,34 @@ span {
     border-radius: 50%;
     width: 45px;
     height: 45px;
+    margin-right: 10px;
     background-color: darkslateblue;
+    color: white;
+    fill: currentColor;
+}
+
+.tag {
+    display: flex;
+    flex-direction: column;
+}
+
+.twitter {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: darkslateblue;
+}
+
+.t-count {
+    margin-top: 0;
+    font-weight: 400;
+}
+
+.tag2 {
+    display: flex;
+    padding-top: 10px;
+    padding-left: 10px;
+    height: 55px;
+    width: 300px;
+    margin-bottom: 3px;
+    background-color: lightgray;
 }
