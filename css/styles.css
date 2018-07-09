@@ -1,3 +1,5 @@
+
+
 body {
     font-family: 'Roboto', sans-serif;
     /* color: rgb(161, 161, 161); */
@@ -82,13 +84,16 @@ h1 {
 .dash {
     display: Inline;
     margin-top: 0;
-    margin-right: 6px;
-    margin-left: 5px;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+input {
+    width: 180px;
 }
 
 .input {
     display: inline-block;
-    padding-left: 7.5px;
+    padding-left: 10px;
     padding-bottom: 10px;
     padding-top: 5px;
     padding-right: 0;
@@ -171,4 +176,25 @@ span {
     width: 300px;
     margin-bottom: 3px;
     background-color: lightgray;
+}
+
+.name {
+    width: 160px;
+}
+
+.date {
+    margin-top: 15px;
+
+}
+
+.recent {
+    width: 220px;
+    font-size: 14px;
+}
+
+.arrow {
+    font-size: 48px;
+    font-weight: 300;
+    color: darkslateblue;
+    margin-right: 5px;
 }

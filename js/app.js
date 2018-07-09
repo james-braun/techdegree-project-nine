@@ -51,13 +51,13 @@ pElement.addEventListener("click", function() {
     dot.style.display = 'none';
 });
 
-for (let j = 0; j < spanElement.length - 1; ++j) {
+for (let j = 0; j < spanElement.length; ++j) {
     spanElement[j].addEventListener('click', function(e) {
         spanElement[0].style.backgroundColor = 'white';
         spanElement[1].style.backgroundColor = 'white';
         spanElement[2].style.backgroundColor = 'white';
         spanElement[3].style.backgroundColor = 'white';
-        for (let i = 0; i < spanElement.length - 1; ++i) {
+        for (let i = 0; i < spanElement.length; ++i) {
             if ($(e.target).is(spanElement[i])) {
                 e.target.style.backgroundColor = "lightgreen";
                 mainTrafficChart = new Chart(trafficChart, {
