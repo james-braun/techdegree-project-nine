@@ -5,10 +5,17 @@ let chartData = [[75,100,175,125,225,200,100,175,125,225,200,100], [75,100,175,1
 let trafficChart = document.getElementById("trafficChart").getContext('2d');
 let weeklyTrafficChart = document.getElementById("weeklyTrafficChart").getContext('2d');
 let mobileUsersChart = document.getElementById("mobileUsersChart").getContext('2d');
-let spanElement = document.querySelectorAll("span");
+let spanElement = document.querySelectorAll(".span-class");
 let dot = document.getElementById("dot");
 let pElement = document.querySelector("p");
+let sendButton = document.getElementById("form-send");
+let close = document.getElementById("close-button")
 
+close.addEventListener("click", function(){
+    let div = document.getElementById('alert');
+    div.style.display = "none";
+    dot.style.display = "none";
+});
 
 spanElement[2].style.backgroundColor = 'lightgreen';
 let mainTrafficChart = new Chart(trafficChart, {
@@ -43,12 +50,6 @@ let mainTrafficChart = new Chart(trafficChart, {
             pointBackgroundColor: 'rgba(255, 255, 255, 1)',
         }]
     },    
-});
-
-pElement.addEventListener("click", function() {
-    pElement.style.opacity = 0;
-    pElement.style.zIndex = -100;
-    dot.style.display = 'none';
 });
 
 for (let j = 0; j < spanElement.length; ++j) {
@@ -136,5 +137,15 @@ let mobileChart = new Chart(mobileUsersChart, {
             position: 'right',
         },
     }
+});
 
+sendButton.addEventListener("click", function() {
+    if ((document.getElementById("form-input").value === "") || (document.getElementById("form-textarea").value === "")) {
+        alert("Error - empty Field!");
+    } else {
+        alert("Message sent!");
+    }
+
+    document.getElementById("form-input").value = "";
+    document.getElementById("form-textarea").value = "";
 });
