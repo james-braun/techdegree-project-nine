@@ -149,3 +149,47 @@ sendButton.addEventListener("click", function() {
     document.getElementById("form-input").value = "";
     document.getElementById("form-textarea").value = "";
 });
+
+// function from team treehouse lesson.
+function supportsLocalStorage() {
+    try {
+        return 'localStorage' in window && window['localStorage'] !== null
+    } catch(e) {
+        return false
+    }
+}
+let timezone;
+if (supportsLocalStorage()) {
+    if (localStorage.getItem('send-email')) {
+        document.getElementById('cb1').checked = true;
+    } else {
+        document.getElementById('cb1').checked = false;
+    }
+    if (localStorage.getItem('set-profile')) {
+        document.getElementById('cb2').checked = true;
+    } else {
+        document.getElementById('cb2').checked = false;
+    }
+    document.getElementById('timezone').value = localStorage.getItem('timezone');
+    console.log(localStorage.getItem('timezone'));
+    console.log($('timezone').val);
+    let checkbox1 = document.getElementById('cb1');
+    let checkbox2 = document.getElementById('cb2');
+    checkbox1.addEventListener('click', function() {
+        if (document.getElementById('cb1').checked === true) {
+            localStorage.setItem('send-email', 'true');
+        } else {
+            localStorage.setItem('send-email', '');
+        }
+    });
+    checkbox2.addEventListener('click', function() {
+        if (document.getElementById('cb2').checked === true) {
+            localStorage.setItem('set-profile', 'true');
+        } else {
+            localStorage.setItem('set-profile', '');
+        }
+    });
+    document.getElementById('timezone').addEventListener('change', function() {
+        localStorage.setItem('timezone', document.getElementById('timezone').value);
+    });
+}
