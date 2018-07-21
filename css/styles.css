@@ -2,7 +2,6 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    /* color: rgb(161, 161, 161); */
     max-width: 320px;
     margin: 0 auto;
 }
@@ -83,13 +82,17 @@ h1 {
 
 .dash {
     display: Inline;
-    margin-top: 0;
-    margin-right: 0px;
-    margin-left: 0px;
+    margin-top: 5;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.icons {
+    display: inline-flex;
 }
 
 .input-actual {
-    width: 180px;
+    width: 173px;
 }
 
 .input {
@@ -304,4 +307,110 @@ h1 {
       margin-top: 25px;
       margin-bottom: 50px;
       border-radius: 6px;
+  }
+
+  @media (min-width: 768px) {
+
+      h3 {
+          margin-left: 10px;
+      }  
+
+      body {
+          display: grid;
+          max-width: 768px;
+          grid-template-columns: 60px 236px 118px 118px 236px;
+      }
+
+      header {
+          grid-column: 1 / 6;
+      }
+
+      .section-one {
+          grid-column: 2 / 6;
+      }
+
+      .input {
+        padding-left: 390px;
+        padding-bottom: 10px;
+        padding-top: 5px;
+        padding-right: 0;
+        background-color: rgb(231, 231, 231);
+      }
+
+      .section-two {
+        grid-column: 2 / 6;
+      }
+
+      .traffic {
+          margin-left: 5px;
+          margin-right: 400px;
+      }
+
+      #trafficChart {
+        max-width: 708px;
+        max-height: 300px;
+        margin: 0 auto;
+      }  
+
+      .section-three {
+          grid-column: 2 / 4;
+      }
+
+      .section-four {
+          grid-column: 4 / 6;
+      }
+
+      .section-five {
+          grid-column: 2 / 6;
+      }
+
+      .tag2 {
+          width: 310px;
+          margin: 0 15px;
+          border-radius: 6px;
+      }
+      .section-six {
+          grid-column: 2 / 4;
+      }
+
+      .section-seven {
+          grid-column: 4 / 6;
+      }
+
+      .section-eight {
+          grid-column: 2 / 4;
+      }
+
+      form {
+          margin-left: 20px;
+      }
+
+      .section-nine {
+          grid-column: 4 / 6;
+      }
+
+      #timezone {
+          margin: 25px 20px;
+      }
+
+      .div-flex {
+          display: flex;
+      }
+
+      .owner {
+          display: inline;
+      }
+
+      .container {
+          width: 60px;
+          height: 100%;
+          grid-row: 2 / 8;
+      }
+
+      .icons {
+        display: inline-flex;
+        flex-direction: column;
+      }
+      
+ 
   }
