@@ -128,13 +128,14 @@ h1 {
 
 .traffic {
     display: inline;
-    margin-right: 90px;
+    margin-right: 75px;
 }
 .span-class {
     display: inline-block;
     margin-top: 15px;
-    padding: 5px 10px;
+    padding: 5px 5px;
     border-radius: 20%;
+    font-size: 9px;
 }
 
 #trafficChart {
@@ -305,8 +306,21 @@ h1 {
   #timezone {
       width: 310px;
       margin-top: 25px;
-      margin-bottom: 50px;
+      margin-bottom: 20px;
       border-radius: 6px;
+  }
+
+  button {
+      width: 100px;
+      height: 30px;
+      margin: 0 25px 25px;
+      border-radius: 6px;
+      background-color: #2196F3;
+      color: white;
+  }
+
+  .btn2 {
+      background-color: rgb(179, 179, 179)
   }
 
   @media (min-width: 768px) {
@@ -343,7 +357,11 @@ h1 {
 
       .traffic {
           margin-left: 5px;
-          margin-right: 400px;
+          margin-right: 350px;
+      }
+
+      .span-class {
+          font-size: 16px;
       }
 
       #trafficChart {
@@ -366,7 +384,7 @@ h1 {
 
       .tag2 {
           width: 310px;
-          margin: 0 15px;
+          margin: 0 15px 1px;
           border-radius: 6px;
       }
       .section-six {
@@ -383,6 +401,7 @@ h1 {
 
       form {
           margin-left: 20px;
+          margin-bottom: 25px;
       }
 
       .section-nine {
@@ -393,6 +412,9 @@ h1 {
           margin: 25px 20px;
       }
 
+      button {
+          margin: 0 35px;
+      }
       .div-flex {
           display: flex;
       }
@@ -411,6 +433,66 @@ h1 {
         display: inline-flex;
         flex-direction: column;
       }
-      
- 
+  }
+
+  @media (min-width: 1024px) {
+    body {
+        max-width: 1024px;
+        grid-template-columns: 60px 321.33px 160.66px 160.66px 321.33px;
+    }
+
+    .input-actual {
+        width: 300px;
+    }
+    .input {
+        padding-left: 527px;
+    }
+    
+    #trafficChart {
+        max-width: 964px;
+        max-height: 400px;
+    }
+
+    .traffic {
+        margin-right: 600px;
+    }
+
+    #weeklyTrafficChart {
+        max-width: 482px;
+        max-height: 482px;
+    }
+
+    .tag2 {
+        width: 440px;
+    }
+
+    .name {
+        width: 300px;
+    }
+
+    .recent {
+        width: 320px;
+    }
+
+    #form-input {
+        width: 440px;
+    }
+
+    #form-textarea {
+        min-width: 440px;
+        max-width: 440px;
+    }
+
+    #form-send {
+        width: 440px;
+        margin-bottom: 50px;
+    }
+
+    #timezone {
+        width: 440px;
+    }
+
+    button {
+        margin-left: 75px;
+    }
   }
