@@ -1,5 +1,3 @@
-
-
 let label = [["12","1","2","3","4","5","6","7","8","9","10","11"],["S","M","T","W","T","F","S"],["16-22","23-29","30-5","6-12","13-19","20-26","27-3","4-10","11-17","18-24","25-31"],['JAN','FEB','MAR','APR','MAY','JUN','JUL','AUG','SEP','OCT','NOV','DEC']];
 let chartData = [[75,100,175,125,225,200,100,175,125,225,200,100], [75,100,175,125,225,200,100], [700,1300,1000,1500,2000,1500,1700,1300,1100,1500,2000], [2800,3900,4000,4500,6500,4200,6100,8000,3300,6000,7500,5600]];
 let trafficChart = document.getElementById("trafficChart").getContext('2d');
@@ -153,12 +151,11 @@ sendButton.addEventListener("click", function() {
 // function from team treehouse lesson.
 function supportsLocalStorage() {
     try {
-        return 'localStorage' in window && window['localStorage'] !== null
+        return 'localStorage' in window && window['localStorage'] !== null;
     } catch(e) {
-        return false
+        return false;
     }
 }
-let timezone;
 if (supportsLocalStorage()) {
     if (localStorage.getItem('send-email')) {
         document.getElementById('cb1').checked = true;
@@ -171,8 +168,6 @@ if (supportsLocalStorage()) {
         document.getElementById('cb2').checked = false;
     }
     document.getElementById('timezone').value = localStorage.getItem('timezone');
-    console.log(localStorage.getItem('timezone'));
-    console.log($('timezone').val);
     let checkbox1 = document.getElementById('cb1');
     let checkbox2 = document.getElementById('cb2');
     checkbox1.addEventListener('click', function() {
