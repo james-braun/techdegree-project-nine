@@ -5,7 +5,7 @@ let weeklyTrafficChart = document.getElementById("weeklyTrafficChart").getContex
 let mobileUsersChart = document.getElementById("mobileUsersChart").getContext('2d');
 let spanElement = document.querySelectorAll(".span-class");
 let dot = document.getElementById("dot");
-let pElement = document.querySelector("p");
+// let pElement = document.querySelector("p");
 let sendButton = document.getElementById("form-send");
 let close = document.getElementById("close-button")
 
@@ -156,6 +156,7 @@ function supportsLocalStorage() {
         return false;
     }
 }
+
 if (supportsLocalStorage()) {
     if (localStorage.getItem('send-email')) {
         document.getElementById('cb1').checked = true;
